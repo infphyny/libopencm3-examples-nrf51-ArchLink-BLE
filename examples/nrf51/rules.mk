@@ -60,7 +60,7 @@ INCLUDES += $(patsubst %,-I%, . $(OPENCM3_INC) )
 OBJS = $(CFILES:%.c=$(BUILD_DIR)/%.o)
 OBJS += $(CXXFILES:%.cxx=$(BUILD_DIR)/%.o)
 OBJS += $(AFILES:%.S=$(BUILD_DIR)/%.o)
-GENERATED_BINS = $(PROJECT).elf $(PROJECT).bin $(PROJECT).map $(PROJECT).list $(PROJECT).lss
+GENERATED_BINS = $(PROJECT).elf $(PROJECT).bin $(PROJECT).map $(PROJECT).list $(PROJECT).lss $(PROJECT).hex
 
 TGT_CPPFLAGS += -MD
 TGT_CPPFLAGS += -Wall -Wundef $(INCLUDES)

@@ -22,7 +22,7 @@ GPIO30 => LED
 #define PORT_LED GPIO
 #define PIN_LED GPIO30
 #define RTC0_PRESC 0
-#define RTC0_COMPARE 32767
+#define RTC0_COMPARE 32767>>1
 
 volatile bool toggle_led = false;
 volatile bool uart0_tx_ready = true;
